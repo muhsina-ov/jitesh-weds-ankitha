@@ -73,20 +73,32 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Jitesh & Ankita | Wedding Invitation" },
+      { title: "Jitesh & Ankita | Wedding Invitation, 21 Sept 2026" },
       {
         name: "description",
         content:
-          "Wedding celebration of Jitesh & Ankita on 20-21 September 2026 in Punjab, India. Haldi, Sangeet, Sehra Bandi, Baraat & Wedding details.",
+          "Together with our families, we warmly invite you to celebrate the wedding of Jitesh & Ankita on 20-21 September 2026 in Punjab, India. All ceremony details, venue directions and calendar invite.",
       },
-      { property: "og:title", content: "Jitesh & Ankita | Wedding Invitation" },
+      { property: "og:title", content: "Jitesh & Ankita | Royal Wedding Invitation" },
       {
         property: "og:description",
         content:
-          "Wedding celebration of Jitesh & Ankita on 20-21 September 2026 in Punjab, India. All ceremonies, venue and directions.",
+          "Join Jitesh & Ankita for their Punjabi Jain wedding celebration on 20-21 September 2026 at Imperial Castle, Punjab.",
       },
+      { property: "og:url", content: "https://jitesh-weds-ankitha.vercel.app/" },
+      { property: "og:image", content: "https://jitesh-weds-ankitha.vercel.app/og-image.jpg" },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
+      { property: "og:image:alt", content: "Jitesh & Ankita Wedding Invitation Banner" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Jitesh & Ankita | Royal Wedding Invitation" },
+      {
+        name: "twitter:description",
+        content:
+          "Join Jitesh & Ankita for their Punjabi Jain wedding celebration on 20-21 September 2026 at Imperial Castle, Punjab.",
+      },
+      { name: "twitter:image", content: "https://jitesh-weds-ankitha.vercel.app/og-image.jpg" },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },

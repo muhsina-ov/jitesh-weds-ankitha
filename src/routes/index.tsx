@@ -20,16 +20,28 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Join Jitesh & Ankita for their wedding celebrations in Punjab. Sangeet, Haldi, Sehra Bandi, Baraat and Wedding details, countdown and directions.",
+          "Together with our families, we warmly invite you to celebrate the wedding of Jitesh & Ankita on 20-21 September 2026 in Punjab, India. All ceremony details, venue directions and calendar invite.",
       },
-      { property: "og:title", content: "Jitesh & Ankita | Wedding Invitation" },
+      { property: "og:title", content: "Jitesh & Ankita | Royal Wedding Invitation" },
       {
         property: "og:description",
         content:
-          "Join Jitesh & Ankita for their wedding celebrations on 20-21 September 2026 in Punjab. All event details and venue directions.",
+          "Together with our families, we warmly invite you to celebrate the wedding of Jitesh & Ankita on 20-21 September 2026 in Punjab.",
       },
+      { property: "og:url", content: "https://jitesh-weds-ankitha.vercel.app/" },
+      { property: "og:image", content: "https://jitesh-weds-ankitha.vercel.app/og-image.jpg" },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
+      { property: "og:image:alt", content: "Jitesh & Ankita Wedding Invitation Banner" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Jitesh & Ankita | Royal Wedding Invitation" },
+      {
+        name: "twitter:description",
+        content:
+          "Together with our families, we warmly invite you to celebrate the wedding of Jitesh & Ankita on 20-21 September 2026 in Punjab.",
+      },
+      { name: "twitter:image", content: "https://jitesh-weds-ankitha.vercel.app/og-image.jpg" },
     ],
   }),
   component: Invitation,
