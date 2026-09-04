@@ -46,7 +46,7 @@ export function Hero() {
         />
 
         <div
-          className="pointer-events-none absolute bottom-[27%] left-1/2 w-[68%] max-w-[290px] -translate-x-1/2 overflow-hidden rounded-3xl p-1 animate-bloom shadow-[0_16px_36px_-12px_rgba(92,80,68,0.35)]"
+          className="pointer-events-none absolute top-[9svh] left-1/2 w-[60%] max-w-[250px] -translate-x-1/2 overflow-hidden rounded-3xl p-1 animate-bloom shadow-[0_16px_36px_-12px_rgba(92,80,68,0.35)]"
           style={{
             transform: `translate3d(-50%, ${-fg * 0.6}px, 0)`,
             background: "linear-gradient(180deg, rgba(255,255,255,0.85) 0%, rgba(253,248,238,0.95) 100%)",
@@ -63,14 +63,17 @@ export function Hero() {
         </div>
 
         <div
-          className="relative flex min-h-[100svh] flex-col items-center justify-end px-6 pb-14 text-center"
+          className="relative flex min-h-[100svh] flex-col items-center justify-end px-6 pb-12 text-center"
           style={{ transform: `translate3d(0, ${-fg}px, 0)` }}
         >
-          <p className="script text-lg text-primary animate-ink" style={{ animationDelay: "0.4s" }}>
+          <p
+            className="script text-xl font-medium tracking-wide text-primary animate-ink"
+            style={{ animationDelay: "0.4s" }}
+          >
             Together with our families
           </p>
           <h1
-            className="mt-3 font-display text-[3.15rem] leading-[1.02] text-foreground animate-ink"
+            className="mt-2 font-display text-[3.15rem] leading-[1.02] text-foreground animate-ink"
             style={{ animationDelay: "0.7s" }}
           >
             {couple.groom}
@@ -78,7 +81,7 @@ export function Hero() {
             {couple.bride}
           </h1>
           <p
-            className="mt-5 text-[0.66rem] uppercase tracking-airy text-muted-foreground animate-ink"
+            className="mt-4 text-[0.66rem] uppercase tracking-airy text-muted-foreground animate-ink"
             style={{ animationDelay: "1s" }}
           >
             {couple.dateLabel}
