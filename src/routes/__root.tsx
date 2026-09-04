@@ -77,16 +77,22 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "Together with our families, we warmly invite you to celebrate the wedding of Jitesh & Ankita on 20-21 September 2026 in Punjab, India. All ceremony details, venue directions and calendar invite.",
+          "Celebrate the wedding of Jitesh & Ankita on 20-21 September 2026 in Punjab. Ceremony details, venue directions and calendar invite.",
       },
+      { property: "og:site_name", content: "Jitesh & Ankita Wedding" },
       { property: "og:title", content: "Jitesh & Ankita | Royal Wedding Invitation" },
       {
         property: "og:description",
         content:
-          "Join Jitesh & Ankita for their Punjabi Jain wedding celebration on 20-21 September 2026 at Imperial Castle, Punjab.",
+          "Join Jitesh & Ankita as they celebrate their wedding on 20-21 Sept 2026 in Punjab.",
       },
-      { property: "og:url", content: "https://jitesh-weds-ankitha.vercel.app/" },
-      { property: "og:image", content: "https://jitesh-weds-ankitha.vercel.app/og-image.jpg" },
+      { property: "og:url", content: "https://jitesh-weds-ankitha.invitingyou.top/" },
+      { property: "og:image", content: "https://jitesh-weds-ankitha.invitingyou.top/og-image.jpg" },
+      {
+        property: "og:image:secure_url",
+        content: "https://jitesh-weds-ankitha.invitingyou.top/og-image.jpg",
+      },
+      { property: "og:image:type", content: "image/jpeg" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "630" },
       { property: "og:image:alt", content: "Jitesh & Ankita Wedding Invitation Banner" },
@@ -96,9 +102,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "twitter:description",
         content:
-          "Join Jitesh & Ankita for their Punjabi Jain wedding celebration on 20-21 September 2026 at Imperial Castle, Punjab.",
+          "Join Jitesh & Ankita as they celebrate their wedding on 20-21 Sept 2026 in Punjab.",
       },
-      { name: "twitter:image", content: "https://jitesh-weds-ankitha.vercel.app/og-image.jpg" },
+      {
+        name: "twitter:image",
+        content: "https://jitesh-weds-ankitha.invitingyou.top/og-image.jpg",
+      },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },

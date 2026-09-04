@@ -7,8 +7,8 @@ export const couple = {
   dateLabel: "Monday, 21 September 2026",
   weddingISO: "2026-09-21T20:00:00+05:30",
   locationLabel: "Jalandhar & Alahdad Chak · Punjab",
-  websiteUrl: "https://jitesh-weds-ankitha.vercel.app",
-  ogImageUrl: "https://jitesh-weds-ankitha.vercel.app/og-image.jpg",
+  websiteUrl: "https://jitesh-weds-ankitha.invitingyou.top",
+  ogImageUrl: "https://jitesh-weds-ankitha.invitingyou.top/og-image.jpg",
 };
 
 export const family = {
