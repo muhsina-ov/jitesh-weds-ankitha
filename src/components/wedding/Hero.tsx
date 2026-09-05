@@ -81,13 +81,13 @@ export function Hero() {
             {couple.bride}
           </h1>
           <p
-            className="mt-4 text-[0.66rem] uppercase tracking-airy text-muted-foreground animate-ink"
+            className="mt-4 text-[0.68rem] font-semibold uppercase tracking-airy text-foreground/85 animate-ink"
             style={{ animationDelay: "1s" }}
           >
             {couple.dateLabel}
           </p>
           <p
-            className="mt-2 text-[0.66rem] uppercase tracking-airy text-muted-foreground animate-ink"
+            className="mt-2 text-[0.68rem] font-semibold uppercase tracking-airy text-foreground/85 animate-ink"
             style={{ animationDelay: "1.15s" }}
           >
             {couple.locationLabel}

@@ -116,24 +116,24 @@ function Invitation() {
             <div className="card-soft p-5">
               <div className="grid grid-cols-1 gap-5 text-center sm:grid-cols-2">
                 <div className="border-b border-primary/20 pb-4 sm:border-b-0 sm:border-r sm:pb-0 sm:pr-4">
-                  <p className="text-[0.62rem] uppercase tracking-airy text-primary">
+                  <p className="text-[0.66rem] font-bold uppercase tracking-airy text-primary">
                     Groom's Parents
                   </p>
-                  <h3 className="mt-2 font-display text-xl text-foreground">
+                  <p className="mt-2 font-display text-[1.25rem] font-semibold leading-snug text-foreground">
                     {family.groomParents.mother}
-                  </h3>
-                  <p className="font-display text-lg text-muted-foreground">
+                  </p>
+                  <p className="mt-1 font-display text-[1.25rem] font-semibold leading-snug text-foreground">
                     & {family.groomParents.father}
                   </p>
                 </div>
                 <div className="pt-1 sm:pl-4 sm:pt-0">
-                  <p className="text-[0.62rem] uppercase tracking-airy text-primary">
+                  <p className="text-[0.66rem] font-bold uppercase tracking-airy text-primary">
                     Bride's Parents
                   </p>
-                  <h3 className="mt-2 font-display text-xl text-foreground">
+                  <p className="mt-2 font-display text-[1.25rem] font-semibold leading-snug text-foreground">
                     {family.brideParents.mother}
-                  </h3>
-                  <p className="font-display text-lg text-muted-foreground">
+                  </p>
+                  <p className="mt-1 font-display text-[1.25rem] font-semibold leading-snug text-foreground">
                     & {family.brideParents.father}
                   </p>
                 </div>
@@ -142,18 +142,20 @@ function Invitation() {
 
             {/* Regards & Grandparents Card */}
             <div className="card-soft p-5 text-center">
-              <p className="text-[0.62rem] uppercase tracking-airy text-primary">
-                With Sacred Blessings & Fond Remembrance
+              <p className="text-[0.66rem] font-bold uppercase tracking-airy text-primary">
+                With the Blessings of Our Elders
               </p>
-              <div className="mt-3 space-y-1">
+              <div className="mt-3 space-y-1.5">
                 {family.grandparents.map((gp) => (
-                  <p key={gp} className="font-display text-base text-foreground/90">
+                  <p key={gp} className="font-display text-[1.12rem] font-semibold text-foreground">
                     {gp}
                   </p>
                 ))}
               </div>
               <div className="mt-4 border-t border-primary/20 pt-3">
-                <p className="text-xs italic text-muted-foreground">{family.compliments}</p>
+                <p className="text-xs font-semibold italic text-foreground/85">
+                  {family.compliments}
+                </p>
               </div>
             </div>
           </div>
@@ -180,29 +182,33 @@ function Invitation() {
               <Reveal delay={i * 60}>
                 <article className="card-soft press p-5">
                   <div className="grid grid-cols-[auto_minmax(0,1fr)] items-center gap-3">
-                    <span className="grid h-11 w-11 shrink-0 place-items-center rounded-full border border-primary/30 text-primary">
+                    <span className="grid h-11 w-11 shrink-0 place-items-center rounded-full border-2 border-primary/50 text-lg font-bold text-primary shadow-sm">
                       {ev.glyph}
                     </span>
                     <div className="min-w-0">
-                      <h3 className="truncate font-display text-2xl">{ev.name}</h3>
-                      <p className="text-[0.62rem] uppercase tracking-airy text-muted-foreground">
+                      <h3 className="truncate font-display text-2xl font-bold text-foreground">
+                        {ev.name}
+                      </h3>
+                      <p className="mt-0.5 text-[0.68rem] font-bold uppercase tracking-wider text-amber-900/90 dark:text-amber-200">
                         {ev.date} · {ev.time}
                       </p>
                     </div>
                   </div>
                   <div className="mt-4">
-                    <p className="text-sm font-medium text-foreground">{ev.venue}</p>
+                    <p className="text-[1.02rem] font-bold text-foreground">{ev.venue}</p>
                     {ev.address && (
-                      <p className="mt-0.5 text-xs text-muted-foreground">{ev.address}</p>
+                      <p className="mt-0.5 text-xs font-semibold text-foreground/80">
+                        {ev.address}
+                      </p>
                     )}
                   </div>
-                  <p className="mt-2 text-xs italic text-foreground/80">{ev.note}</p>
+                  <p className="mt-2 text-xs font-semibold italic text-foreground/90">{ev.note}</p>
                   {ev.mapsUrl && (
                     <a
                       href={ev.mapsUrl}
                       target="_blank"
                       rel="noreferrer"
-                      className="mt-3 inline-flex items-center text-[0.64rem] uppercase tracking-wider text-primary hover:underline"
+                      className="mt-3 inline-flex items-center text-[0.68rem] font-bold uppercase tracking-wider text-primary hover:underline"
                     >
                       📍 View Location on Map →
                     </a>

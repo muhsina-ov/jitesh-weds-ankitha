@@ -6,7 +6,7 @@ export const couple = {
   tagline: "Two souls united by destiny, blessed by tradition",
   dateLabel: "Monday, 21 September 2026",
   weddingISO: "2026-09-21T20:00:00+05:30",
-  locationLabel: "Jalandhar & Alahdad Chak · Punjab",
+  locationLabel: "Jalandhar & Sultanpur Lodhi · Punjab",
   websiteUrl: "https://jitesh-weds-ankitha.invitingyou.top",
   ogImageUrl: "https://jitesh-weds-ankitha.invitingyou.top/og-image.jpg",
 };
@@ -18,7 +18,7 @@ export const family = {
   },
   brideParents: {
     mother: "Smt. Neelam Jain",
-    father: "Sh. Upendra Jain",
+    father: "Sh. Upender Kumar Jain",
   },
   grandparents: [
     "Late Smt. Shanti Devi Jain & Late Sh. Kashmiri Lal Jain",
@@ -89,7 +89,7 @@ export const events: WeddingEvent[] = [
     date: "21 Sept 2026",
     time: "8:00 PM Onwards",
     venue: "Imperial Castle",
-    address: "Talwandi Road, near Happy Resorts, Alahdad Chak, Punjab 144626",
+    address: "Talwandi Road, near Happy Resorts, Sultanpur Lodhi, Punjab 144626",
     mapsUrl:
       "https://maps.google.com/maps/place//data=!4m2!3m1!1s0x391a3b70e8916ccb:0x8c410f7fd0803763?entry=s&sa=X&ved=2ahUKEwjsu72alNSWAxWIieEIHeZ1IjgQ4kB6BAgWEAA&hl=en",
     note: "Sacred Varmala, auspicious Pheras followed by Royal Dinner.",
@@ -98,7 +98,7 @@ export const events: WeddingEvent[] = [
 
 export const venue = {
   name: "Imperial Castle",
-  address: "Talwandi Road, near Happy Resorts, Alahdad Chak, Punjab 144626",
+  address: "Talwandi Road, near Happy Resorts, Sultanpur Lodhi, Punjab 144626",
   mapsUrl:
     "https://maps.google.com/maps/place//data=!4m2!3m1!1s0x391a3b70e8916ccb:0x8c410f7fd0803763?entry=s&sa=X&ved=2ahUKEwjsu72alNSWAxWIieEIHeZ1IjgQ4kB6BAgWEAA&hl=en",
 };
